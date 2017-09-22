@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
@@ -36,11 +37,11 @@ dependencies {
 }
 
 
-def siteUrl = 'https://github.com/Hymanme/TagFlowLayout' // 项目的主页
-def gitUrl = 'https://github.com/Hymanme/TagFlowLayout.git' // Git 仓库的 url
+def siteUrl = 'https://github.com/softmicro929/XPermission' // 项目的主页
+def gitUrl = 'git@github.com:softmicro929/XPermission.git' // Git 仓库的 url
 // Maven Group ID for the artifact，填你唯一的groupid，
 // 强烈建议填写`com.github.yourusername`,其中 yourusername 为你 github 用户名
-group = "com.github.hymanme.tagflowlayout"
+group = "com.softmicro.xpermission"
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -48,7 +49,7 @@ install {
             project {
                 packaging 'aar'
                 // Add your description here
-                name 'Android TagFlowLayout Widget' //项目描述
+                name 'Android Dynamic Permission' //项目描述
                 url siteUrl
                 // Set your license
                 licenses {
@@ -59,9 +60,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'hymanme'    //填写的一些基本信息
-                        name 'hymane'
-                        email 'hymanme@163.com'
+                        id 'softmicro'    //填写的一些基本信息
+                        name 'wangshuainan'
+                        email 'wangshuainan@outlook.com'
                     }
                 }
                 scm {
@@ -98,7 +99,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "TagFlowLayout"    //发布到JCenter上的项目名字
+        name = "XPermission"    //发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
