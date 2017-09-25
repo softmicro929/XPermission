@@ -8,6 +8,8 @@
 4. 用户勾选拒绝的话，可以自己定义权限解释弹窗，向用户解释申请权限的理由；
 5. 用户勾选不再提醒，弹窗引导用户去设置打开；
 
+
+
 # 引用
 ```
 compile 'com.softmicro.xpermission:xpermission:0.1.0'
