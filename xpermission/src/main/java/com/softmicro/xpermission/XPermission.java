@@ -136,10 +136,10 @@ public class XPermission {
     }
 
     public static void onRequestPermissionsResult(int requestCode,
-                                                  @NonNull String[] permissions,
-                                                  @NonNull int[] grantResults,
-                                                  @NonNull Object receiver,
-                                                  @NonNull PermissionCallBack callBack) {
+                                                   String[] permissions,
+                                                   int[] grantResults,
+                                                   Object receiver,
+                                                   PermissionCallBack callBack) {
         Activity activity;
         if(receiver instanceof Fragment)
             activity = ((Fragment) receiver).getActivity();
